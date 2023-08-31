@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Color de Párrafos</title>
+</head>
+<body>
+    <button id="cambiarColorBtn">Cambiar Color a Rojo</button>
+    <p>Primer párrafo</p>
+    <p>Segundo párrafo</p>
+    <p>Tercer párrafo</p>
+
+    <script>
+        const cambiarColorBtn = document.getElementById('cambiarColorBtn');
+
+        cambiarColorBtn.addEventListener('click', () => {
+            const parrafos = document.getElementsByTagName('p');
+            for (const parrafo of parrafos) {
+                parrafo.style.color = 'red';
+            }
+        });
+    </script>
+</body>
+</html>
